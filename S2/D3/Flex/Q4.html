@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto';
+        line-height: 1.5em;
+      }
+
+      body > div {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 122, 255, 0.05);
+      }
+
+      .news {
+        display: flex;
+        gap: 3vw;
+        margin: auto;
+      }
+
+      .card1 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow:1px 3px 3px rgba(0, 122, 255, 0.1);
+        padding: 2em;
+        width: 22vw;
+        border-radius: 24px;
+      }
+
+      .card1 > div {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(128, 128, 128, 0.5);
+        border-radius: 8px;
+        margin-bottom: 2em;
+        box-sizing: border-box;
+      }
+
+      h3 {
+        font-size: 17px;
+        margin: 0.8em 0 0.8em 0;
+      }
+
+      p {
+        font-size: 17px;
+        line-height: 1.5em;
+      }
+
+      button {
+        margin: 3em auto;
+        width: max-content;
+        padding: 1em 1.5em;
+        background-color: rgb(0, 122, 255, 0.01);
+        color: red;
+        letter-spacing: 1.5px;
+        border: 1px solid red;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      div + div {
+        background-color: white;
+      }
+
+      .investors {
+        display: flex;
+        gap: 1.5vw;
+        justify-content: center;
+        margin-bottom: 2em;
+      }
+
+      .card2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 27%;
+        border: 1px solid rgb(128, 128, 128, 0.25);
+        border-radius: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2 style="margin: 1em auto; font-size: 32px">Masai in News</h2>
+      <div class="news">
+        <div class="card1">
+          <div>
+            <img
+              src="https://img.etimg.com/photo/msid-76920425,quality-100/et-logo.jpg"
+              alt=""
+              width="225"
+            />
+          </div>
+          <p style="color: blue; font-weight: 500; font-size: 17px">
+            21 Dec 2021
+          </p>
+          <h3>
+            Edtech startup Masai School acquires data analytics from Prepleaf
+            for $1million.
+          </h3>
+          <p>
+            With their latest acquisition, Masai moves one step closer to
+            becoming ind...
+          </p>
+        </div>
+        <div class="card1">
+          <div>
+            <img
+              src="https://images.moneycontrol.com/images/common/headfoot/logo.png?impolicy=mchigh"
+              alt=""
+              width="225"
+              height="180"
+            />
+          </div>
+          <p style="color: blue; font-weight: 500; font-size: 17px">
+            26 Oct 2021
+          </p>
+          <h3>
+            Kunal Shah, Vijay Shekhar Sharma, Amrish Rau among 21 angel
+            investors in Masai School
+          </h3>
+          <p>
+            Masai School is aiming to expand to 20 smaller cities by March 2022
+            and exp...
+          </p>
+        </div>
+        <div class="card1">
+          <div>
+            <img
+              src="https://masai-website-images.s3.ap-south-1.amazonaws.com/vccircle_6ef779c958.png"
+              alt=""
+              width="180"
+              height="180"
+            />
+          </div>
+          <p style="color: blue; font-weight: 500; font-size: 17px">
+            18 Aug 2020
+          </p>
+          <h3>
+            Unitus Ventures Leads Pre-Series A Funding For Coding-Focused Masai
+            School
+          </h3>
+          <p>
+            Software coding platform Masai School has raised $2.5 million (Rs
+            18.6 cror...
+          </p>
+        </div>
+      </div>
+      <button>SEE MORE <i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div>
+      <h2 style="font-size: 35px; margin: 1em auto">
+        Our Investors,Who Believe In Us
+      </h2>
+      <div class="investors">
+        <div class="card2">
+          <img
+            src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg"
+            alt=""
+            width="300"
+          />
+        </div>
+        <div class="card2">
+          <img
+            src="https://www.masaischool.com/images/our-investors/capria-logo.svg"
+            alt=""
+            width="300"
+          />
+        </div>
+        <div class="card2">
+          <img
+            src="https://www.masaischool.com/images/our-investors/omidyar-borderless.svg"
+            alt=""
+            width="300"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
