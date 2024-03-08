@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+      }
+
+      h1 {
+        font-size: 30px;
+        color: green;
+        margin: 1em;
+        text-align: center;
+      }
+
+      .calculator {
+        display: grid;
+        gap: 8px;
+        padding: 2.5em;
+        margin: 1em auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        grid-template-columns: repeat(4, 1fr);
+        width: 220px;
+      }
+
+      .calculator > div {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius:7px;
+      }
+
+      div.calculator > div:nth-child(1) {
+        background-color: white;
+        grid-column: span 4;
+      }
+
+      .calculator > div:nth-child(4n + 1) {
+        background-color: black;
+        color: white;
+      }
+
+      .calculator > div:nth-child(14) {
+        background-color: red;
+        color: white;
+      }
+
+      .calculator > div:nth-child(16) {
+        background-color: black;
+        color: white;
+      }
+
+      .calculator>div:nth-child(n):hover{
+        background-color:grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Masai Calculator</h1>
+      <div class="calculator">
+        <div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>-</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>x</div>
+        <div>C</div>
+        <div>0</div>
+        <div>=</div>
+        <div>/</div>
+      </div>
+    </div>
+  </body>
+</html>

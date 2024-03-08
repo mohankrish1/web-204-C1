@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-size: 8px;
+      }
+
+      i {
+        font-size: 10px;
+      }
+
+      body {
+        background-color: rgb(75, 177, 211);
+        color: rgb(75, 177, 211);
+      }
+
+      div.keyboard {
+        background-color: black;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 10px;
+        margin: 28vh auto;
+        width:710px;
+        padding: 3em;
+        border-radius: 16px;
+      }
+
+      .keyboard > div:nth-child(35) {
+        grid-area:3/11/4/13;
+      }
+
+      .keyboard > div:nth-child(46) {
+        grid-column: span 2;
+      }
+
+      .keyboard > div:nth-child(51) {
+        grid-column: span 4;
+      }
+
+      .keyboard > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        background-color: rgb(46, 52, 57);
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="keyboard">
+      <div>~</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>0</div>
+      <div>Delete</div>
+      <div>tab</div>
+      <div>Q</div>
+      <div>W</div>
+      <div>E</div>
+      <div>R</div>
+      <div>T</div>
+      <div>Y</div>
+      <div>U</div>
+      <div>I</div>
+      <div>O</div>
+      <div>P</div>
+      <div>\</div>
+      <div>caps</div>
+      <div>A</div>
+      <div>S</div>
+      <div>D</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>J</div>
+      <div>K</div>
+      <div>L</div>
+      <div>Enter</div>
+      <div>shift</div>
+      <div>Z</div>
+      <div>X</div>
+      <div>C</div>
+      <div>V</div>
+      <div>B</div>
+      <div>N</div>
+      <div>M</div>
+      <div><i class="fas fa-chevron-left"></i></div>
+      <div><i class="fas fa-chevron-right"></i></div>
+      <div>shift</div>
+      <div><i class="fas fa-globe"></i></div>
+      <div>control</div>
+      <div>option</div>
+      <div>alt</div>
+      <div>space</div>
+      <div>alt</div>
+      <div>option</div>
+      <div><i class="fas fa-arrow-left"></i></div>
+      <div><i class="fas fa-arrow-right"></i></div>
+    </div>
+  </body>
+</html>
