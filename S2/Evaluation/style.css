@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+
+* {
+  font-family: 'Shojumaru';
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* background-color: black; */
+  width: 75vw;
+  margin: auto;
+}
+
+.header {
+  background-image: url('./images/Bg1.png');
+  color: white;
+  height: 65vh;
+  background-size: contain;
+  background-position: center;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  color: white;
+  background-color: black;
+  margin: auto;
+}
+
+.main > div:nth-child(1) {
+  margin: 5em 0 5em 6em;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
+.map {
+  background-image: url('./images/BG-2.png');
+  background-color: rgb(0, 0, 0, 0.93);
+  height: 80vh;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(236, 8, 8, 1);
+}
+
+.map > div {
+  margin: 2em;
+}
+
+.map > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+}
+
+.card {
+  display: inline-block;
+  border: 1px solid red;
+  border-radius: 3px;
+}
+
+.form {
+  display: flex;
+  background-color: black;
+  color: rgba(236, 8, 8, 1);
+  padding: 3em;
+}
+
+.form > div:nth-child(1) {
+  width: 30%;
+  margin: 0 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form button {
+  border: 1px solid red;
+  padding: 1.5em 2em;
+  background-color: black;
+  color: white;
+  border-radius: 1em;
+  margin-top: 1em;
+  width: 32vw;
+  font-size: 12px;
+}
+
+.form button p {
+  margin: 1em 0;
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.footer {
+  display: flex;
+  padding-top: 10em;
+  flex-direction: column;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h3 {
+  color: rgba(236, 8, 8, 1);
+  font-size: 11px;
+  margin: 1em;
+  letter-spacing: 0.15em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a {
+  font-size: 8px;
+  margin-left: 10px;
+}
+
+.footer > div {
+  margin: 1em;
+}
+
+.footer > div > img {
+  margin-left: 0.2em;
+}
+
+.main h2 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.main p {
+  font-size: 12px;
+  margin-bottom: 2em;
+}
+
+.main button,.header button {
+    color:white;
+  border:none;
+  width: max-content;
+  padding: 0.5em 1em;
+  font-size:10px;
+  background-image: linear-gradient(to left,rgba(244, 29, 83,0.7),rgb(238, 68, 21));
+  border-radius:10px;
+}
