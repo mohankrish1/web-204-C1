@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        color: rgb(255, 255, 255, 0.8);
+      }
+
+      .footer{
+        height:100vh;
+      }
+      
+      .footer > div {
+        padding: 1em;
+      }
+
+      .footer {
+        display: grid;
+        grid-template-columns: 38% repeat(4, 1fr);
+        font-size: 16px;
+        grid-template-rows: repeat(5, 12.5vh);
+        grid-template-areas:
+          'L A1 A2 A3 A4'
+          'L A1 A2 A3 A4'
+          'L A1 A2 A3 A4'
+          'L A1 A2 A3 A4'
+          'F F F F F';
+      }
+
+      h3 {
+        margin-left: 0.65em;
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(2, 2, 111);
+        grid-area: L;
+      }
+
+      .shop1 {
+        grid-area: A1;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(49, 64, 175);
+        color: rgb(255, 255, 255, 0.8);
+      }
+
+      .sell {
+        grid-area: A2;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(49, 64, 175);
+        color: rgb(255, 255, 255, 0.8);
+      }
+
+      .about {
+        grid-area: A3;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(49, 64, 175);
+        color: rgb(255, 255, 255, 0.8);
+      }
+
+      .shop2 {
+        grid-area: A4;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(49, 64, 175);
+        color: rgb(255, 255, 255, 0.8);
+      }
+
+      .foot {
+        grid-area: F;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: rgb(255, 255, 255, 0.8);
+        font-size: 14px;
+      }
+
+      .foot > div {
+        display: flex;
+        align-items: center;
+      }
+
+      .foot > div:nth-child(1) > p {
+        color: white;
+      }
+
+      .foot > div > ul > li {
+        display: inline-block;
+      }
+
+      li {
+        list-style-type: none;
+        margin: 0.75em;
+      }
+
+      p,
+      span {
+        margin: 0 0.5em;
+      }
+
+      @media (max-width: 900px) {
+        .footer {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          font-size: 16px;
+          grid-template-rows: repeat(10, 10vh);
+          grid-template-areas:
+            'A1 A2 A3 A4'
+            'A1 A2 A3 A4'
+            'A1 A2 A3 A4'
+            'A1 A2 A3 A4'
+            'A1 A2 A3 A4'
+            'A1 A2 A3 A4'
+            'L L L L'
+            'L L L L'
+            'L L L L'
+            'F F F F';
+        }
+
+        .logo img {
+          width: 120px;
+          height: 120px;
+        }
+
+        .foot > div:nth-child(1) {
+          display: none;
+        }
+
+        .foot {
+          flex-direction: column;
+        }
+
+        .foot > div {
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .footer {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          font-size: 16px;
+          grid-template-rows: repeat(8, 10vh);
+          grid-template-areas:
+            'F F F F'
+            'A1 A1 A1 A1'
+            'A2 A2 A2 A2'
+            'A3 A3 A3 A3'
+            'A4 A4 A4 A4'
+            'L L L L'
+            'L L L L'
+            'L L L L';
+        }
+
+        .logo img {
+          width: 120px;
+          height: 120px;
+        }
+
+        .foot > div:nth-child(1) {
+          display: none;
+        }
+
+        .foot {
+          flex-direction: column;
+        }
+
+        .foot > div {
+          text-align: center;
+        }
+
+        .footer > div > ul {
+          display: none;
+        }
+
+        .footer > div {
+          padding: 0;
+          justify-content: center;
+        }
+      }
+
+      @media (max-width:587px){
+        .footer {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          font-size: 16px;
+          grid-template-rows: repeat(9, 10vh);
+          grid-template-areas:
+            'F F F F'
+            'F F F F'
+            'A1 A1 A1 A1'
+            'A2 A2 A2 A2'
+            'A3 A3 A3 A3'
+            'A4 A4 A4 A4'
+            'L L L L'
+            'L L L L'
+            'L L L L';
+        }
+
+        .logo img {
+          width: 120px;
+          height: 120px;
+        }
+
+        .foot > div:nth-child(1) {
+          display: none;
+        }
+
+        .foot {
+          flex-direction: column;
+        }
+
+        .foot > div {
+          text-align: center;
+        }
+
+        .footer > div > ul {
+          display: none;
+        }
+
+        .foot>div>ul>li:nth-child(1){
+            display:block;
+            padding:0.5em;
+        }
+
+        .footer > div {
+          padding: 0;
+          justify-content: center;
+        }
+
+        li{
+            margin:0 0.75em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="footer">
+      <div class="logo">
+        <img
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7e923a76-a1ed-4788-838c-78c9f6e1856e/ddcjeyw-a70aa1c2-6144-4d61-8090-049273552766.png/v1/fit/w_414,h_311,q_70,strp/nbc_id__1986__with_the_1979_nbc_peacock_by_miapnesbitt78_ddcjeyw-414w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvN2U5MjNhNzYtYTFlZC00Nzg4LTgzOGMtNzhjOWY2ZTE4NTZlXC9kZGNqZXl3LWE3MGFhMWMyLTYxNDQtNGQ2MS04MDkwLTA0OTI3MzU1Mjc2Ni5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.UM4Yp9BfRcOYrOoO471OCkita5QSsadeb2MR6ylZXbY"
+          alt=""
+          width="150"
+          height="150"
+        />
+      </div>
+      <div class="shop1">
+        <h3 style="text-align: start">Shop</h3>
+        <ul>
+          <li>Gift Cards</li>
+          <li>Etsy Registry</li>
+          <li>Sitemap</li>
+          <li>Etsy Blog</li>
+          <li>Etsy United Kingdom</li>
+          <li>Etsy Germany</li>
+          <li>Etsy Canada</li>
+        </ul>
+      </div>
+      <div class="sell">
+        <h3>Sell</h3>
+        <ul>
+          <li>Sell on Etsy</li>
+          <li>Teams</li>
+          <li>Forums</li>
+          <li>Affiliates & Creators</li>
+        </ul>
+      </div>
+      <div class="about">
+        <h3>About</h3>
+        <ul>
+          <li>Etsy. Inc.</li>
+          <li>Policies</li>
+          <li>Investors</li>
+          <li>Careers</li>
+          <li>Press</li>
+          <li>Impact</li>
+          <li>Legal imprint</li>
+        </ul>
+      </div>
+      <div class="shop2">
+        <h3>Shop</h3>
+        <ul>
+          <li>Gift Cards</li>
+          <li>Etsy Registry</li>
+          <li>Sitemap</li>
+          <li>Etsy Blog</li>
+          <li>Etsy United Kingdom</li>
+          <li>Etsy Germany</li>
+          <li>Etsy Canada</li>
+        </ul>
+      </div>
+      <div class="foot">
+        <div>
+          <img
+            src="https://images6.alphacoders.com/911/911295.png"
+            alt=""
+            width="50"
+            height="90%"
+          />
+          <p>India <span>|</span> English(IN) <span>|</span> &#8377;(INR)</p>
+        </div>
+        <div>
+          <ul>
+            <li><p>&copy; 2024 Etsy.Inc.</p></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Interest-based ads</a></li>
+            <li><a href="#">Local Shops</a></li>
+            <li><a href="#">Regions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

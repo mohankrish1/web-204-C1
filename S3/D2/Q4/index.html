@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q4</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .box,.button{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box>div {
+        background-color: rgb(143, 2, 2);
+        width: 400px;
+        height: 200px;
+      }
+
+      .button {
+        background-color: white;
+      }
+
+      button {
+        color: white;
+        background-color: red;
+        border: none;
+        border-radius: 8px;
+        padding: 0.5em;
+      }
+
+      .button:active{
+        display:none;
+        background-color: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div>
+        <h2>This is the info</h2>
+      </div>
+    </div>
+    <div class="button">
+      <button>Read Info</button>
+    </div>
+  </body>
+</html>
