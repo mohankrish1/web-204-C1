@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .container {
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @keyframes move {
+        5% {
+          width: 25%;
+          height: 60%;
+          border-radius: 16px;
+          border-right: 4px solid goldenrod;
+          border-bottom: 4px solid goldenrod;
+        }
+
+        100% {
+          width: 50%;
+          height: 100%;
+          border-radius: 2px;
+          border-right: 4px solid goldenrod;
+          border-bottom: 4px solid goldenrod;
+        }
+
+        /* 100%{
+        } */
+      }
+
+      .box {
+        animation: move 1.5s infinite;
+        box-shadow: rgb(243, 59, 142) 0 0 25px 0,
+          rgba(202, 46, 116, 1) 0 0 25px 0 inset,
+          rgb(229, 60, 136) 25px 0 25px -25px,
+          rgb(244, 60, 143) -25px 0 25px -25px,
+          rgb(236, 62, 140) 0 25px 25px -25px,
+          rgb(239, 64, 181) 0 -25px 25px -25px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

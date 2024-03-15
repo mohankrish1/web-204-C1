@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      @keyframes tom {
+        0% {
+          left: 20%;
+        }
+
+        40%{
+            filter:blur(4px);
+        }
+
+        50% {
+          left: 60%;
+        }
+
+        80% {
+          filter:blur(0);
+          z-index: 1;
+        }
+      }
+
+      @keyframes jerry {
+        0% {
+          left: 60%;
+        }
+
+        50% {
+          left: 20%;
+          filter:blur(0);
+        }
+
+        60% {
+          filter: blur(3px);
+        }
+
+        75%{
+            filter:blur(0);
+        }
+      }
+
+      .main {
+        background-image: linear-gradient(
+          to top,
+          rgb(71, 139, 172),
+          rgb(242, 95, 116)
+        );
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        position: relative;
+        gap: 10em;
+      }
+
+      .tom {
+        left: 20%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        animation: tom 5s infinite;
+      }
+
+      .jerry {
+        left: 60%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        animation: jerry 5s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="tom">
+        <img
+          src="./Q1/img/pngimg.com - tom_and_jerry_PNG58.png"
+          alt=""
+          height="300"
+        />
+      </div>
+      <div class="jerry">
+        <img
+          src="https://i.pinimg.com/originals/03/a4/d5/03a4d55748dfefa852df76b085708c0a.png"
+          alt=""
+          height="300"
+        />
+      </div>
+    </div>
+  </body>
+</html>
