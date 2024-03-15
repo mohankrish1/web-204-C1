@@ -1,0 +1,15 @@
+// $background-color:#f0f0f0;
+// $color:#333;
+
+@mixin button-styles ($bc,$c) {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    background-color: $bc;
+    color: $c;
+    text-decoration: none;
+  }
+  
+  .primary-button {
+    @include button-styles(#007bff,#fff);
+  }
+  

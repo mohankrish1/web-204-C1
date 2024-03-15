@@ -1,0 +1,19 @@
+$color:red;
+
+div{
+    width:100px;
+    height:100px;
+}
+
+.circle{
+    border:2px solid $color;
+    border-radius: 50%;
+}
+
+.square{
+    background-color:$color;
+}
+
+h2{
+    color:$color;
+}
